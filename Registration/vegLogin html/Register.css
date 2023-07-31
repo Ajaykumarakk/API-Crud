@@ -1,0 +1,137 @@
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+   
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 13px;
+    margin: 0; 
+     
+}
+   
+  input, textarea, select, button {
+    font-family: arial;
+    color: #333;
+    font-size: 14px; }
+   
+  p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0; }
+   
+  img {
+    max-width: 100%;
+    min-height: 580px;
+  }
+   
+  ul {
+    padding-left: 0;
+    margin-bottom: 0; }
+   
+  a:hover {
+    text-decoration: none; }
+   
+  :focus {
+    outline: none; }
+   
+  .wrapper {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; }
+
+    .blur{
+      background-image: url(pexels-roberto-shumski-1903702.jpg);
+      filter: blur(2px);
+    }
+   
+  .inner {
+    padding: 20px;
+    background: #fff;
+    max-width: 850px;
+    margin: auto;
+    display: flex; }
+    .inner .image-holder {
+      width: 50%; }
+    .inner form {
+      width: 50%;
+      padding-top: 36px;
+      padding-left: 45px;
+      padding-right: 45px; }
+    .inner h3 {
+      text-transform: uppercase;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 28px; }
+    
+  .form-wrapper {
+    position: relative; }
+    .form-wrapper i {
+      position: absolute;
+      bottom: 9px;
+      right: 0; }
+
+
+   
+  .form-control {
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0;
+    margin-bottom: 25px; 
+}
+    .form-control::-webkit-input-placeholder {
+      font-size: 14px;
+      color: gray;
+      font-family: arial; }
+     
+  select {
+    font-size: 14px;
+    font-family: arial;
+    cursor: pointer;
+    padding-left: 20px; 
+    color: gray;
+}
+    select option[value=""][disabled] {
+      display: none; }
+   
+  #button {
+    border: none;
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #780909;
+    font-size: 15px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 12px;
+
+  }
+  #button:hover{
+    background: rgb(233, 227, 52);
+  }
+
+ 
+  
+  .checkbox{
+    text-align: left;
+    color: rgb(205, 7, 27);
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+
+   
+ 
