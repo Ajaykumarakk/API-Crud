@@ -12,7 +12,7 @@ namespace Vegetable_register.Controllers
     public class Vegetable_reg : ControllerBase
     {
         VegetableRepository obj;  
-
+         
         public Vegetable_reg()
         { 
             obj = new VegetableRepository();  
