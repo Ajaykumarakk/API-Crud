@@ -7,7 +7,8 @@ Quantity decimal not null,
 Price decimal not null,
 Location nvarchar (200) null
 )
-
+ 
+drop table Vegetable
 select * from Vegetable
 
 create or alter Procedure Veginsert(@Vegetablename nvarchar (200),@Ownername nvarchar (200),@Quantity decimal ,@Price decimal,@Location nvarchar (200))
@@ -36,7 +37,7 @@ end
 
 Exec selectveg 1
 
-create procedure Vegupdate(@Sno int,@Vegetablename nvarchar (200),@Ownername nvarchar (200),@Quantity decimal ,@Price decimal,@Location nvarchar (200))
+create or alter procedure Vegupdate(@Sno int,@Vegetablename nvarchar (200),@Ownername nvarchar (200),@Quantity decimal ,@Price decimal,@Location nvarchar (200))
 as
 begin
 update Vegetable
@@ -50,7 +51,7 @@ where
 Sno = @Sno
 end
 
-Exec Vegupdate 3,'Onion','Hari',50.5,68.98,'Pollachi'
+Exec Vegupdate 1,'Onion','Hari',50.5,68.98,'Pollachi'
 
 create procedure vegdelete(@Sno int)
 as
