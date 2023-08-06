@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration", "Registratio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Register in API", "Register\Register in API.csproj", "{B967424B-4EC3-44F4-98DF-D6965F611683}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC in Exercise", "MVC in Exercise\MVC in Exercise.csproj", "{8756E639-1C31-4DE1-B5DA-399EFD0D32FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B967424B-4EC3-44F4-98DF-D6965F611683}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B967424B-4EC3-44F4-98DF-D6965F611683}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B967424B-4EC3-44F4-98DF-D6965F611683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8756E639-1C31-4DE1-B5DA-399EFD0D32FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8756E639-1C31-4DE1-B5DA-399EFD0D32FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8756E639-1C31-4DE1-B5DA-399EFD0D32FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8756E639-1C31-4DE1-B5DA-399EFD0D32FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

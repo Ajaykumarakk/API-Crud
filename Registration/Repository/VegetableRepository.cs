@@ -57,7 +57,7 @@ namespace privateconsloe.Repository
             }
         }
 
-        public List<Vegetableinfo> select(int Sno)
+        public List<Vegetableinfo> select()
         {
             try
             {
@@ -65,7 +65,7 @@ namespace privateconsloe.Repository
                 List<Vegetableinfo> res = new List<Vegetableinfo>();
 
                 con.Open();
-                res = con.Query<Vegetableinfo>($"Exec selectveg {Sno}").ToList();
+                res = con.Query<Vegetableinfo>("select * from Vegetable").ToList();
                 con.Close();
 
                 //foreach (var a in res)
@@ -86,22 +86,23 @@ namespace privateconsloe.Repository
 
         }
 
-        public List<Vegetableinfo> select()
+        public Vegetableinfo select(int Sno)
         {
             try
             {
                 SqlConnection con = new SqlConnection(connectionstring);
-                List<Vegetableinfo> res = new List<Vegetableinfo>();
 
                 con.Open();
-                res = con.Query<Vegetableinfo>("select * from Vegetable").ToList();
+                var res = con.QueryFirst<Vegetableinfo>($"Exec selectveg {Sno}");
                 con.Close();
+
+                return res;
 
                 //foreach (var a in res)
                 //{
                 //    Console.WriteLine($"Sno {a.Sno},Name {a.Vegetablename},Ownername {a.Quantity},Quantity {a.Quantity},Price {a.Price},Location {a.location}");
                 //}
-                return res;
+
             }
             catch(SqlException ex)
             {
